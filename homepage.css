@@ -1,0 +1,199 @@
+/* Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #040a1f;
+    background-color: rgb(14, 8, 50);
+}
+
+/* Main content styles */
+.main-content {
+    margin-top: 70px; /* Account for fixed navbar */
+    padding: 2rem;
+}
+
+.hero-section {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #293156 0%, #0a072c 100%);
+    color: rgb(205, 215, 230);
+    text-align: center;
+    border-radius: 10px;
+    margin: 2rem;
+    clip-path: polygon(200px 0%, 100% 0%, 100% 100%, 200px 100%, 0% 50%);
+    padding-left: 4rem;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.profile-picture {
+    flex-shrink: 0;
+}
+
+.profile-img {
+    width: 399px;
+    height: 399px;
+    border-radius: 75%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0;
+    align-items: flex-start;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Individual social media colors */
+.social-link.github {
+    background: linear-gradient(45deg, #333, #666);
+    color: white;
+}
+
+.social-link.github:hover {
+    background: linear-gradient(45deg, #24292e, #444);
+}
+
+.social-link.instagram {
+    background: linear-gradient(45deg, #E4405F, #F77737, #FCAF45);
+    color: white;
+}
+
+.social-link.instagram:hover {
+    background: linear-gradient(45deg, #C13584, #E1306C, #FD1D1D);
+}
+
+.social-link.linkedin {
+    background: linear-gradient(45deg, #0077B5, #0A66C2);
+    color: white;
+}
+
+.social-link.linkedin:hover {
+    background: linear-gradient(45deg, #005885, #0077B5);
+}
+
+.social-link.facebook {
+    background: linear-gradient(45deg, #1877F2, #42A5F5);
+    color: white;
+}
+
+.social-link.facebook:hover {
+    background: linear-gradient(45deg, #166FE5, #1877F2);
+}
+
+.social-link.email {
+    background: linear-gradient(45deg, #D44638, #EA4335);
+    color: white;
+}
+
+.social-link.email:hover {
+    background: linear-gradient(45deg, #C23321, #D44638);
+}
+
+.section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Responsive Design for Homepage */
+@media (max-width: 768px) {
+    .hero-section {
+        clip-path: none;
+        padding-left: 2rem;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .social-links {
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Aoishy</title>
+    <link rel="stylesheet" href="navbar.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0e0832;
+            color: #e3eaf7;
+        }
+
+        .main-content {
+            margin-top: 80px;
+            padding: 2rem;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .page-title {
+            margin-bottom: 0.5rem;
+            font-size: 2.2rem;
+        }
+
+        .page-subtitle {
+            margin-top: 0;
+            margin-bottom: 2rem;
+            color: #b8c5df;
+        }
+
+        .research-card {
+            background: linear-gradient(135deg, #1a224a 0%, #11183a 100%);
+            border: 1px solid #2d3b73;
+            border-radius: 12px;
+            padding: 1.4rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .research-title {
+            margin: 0;
+            font-size: 1.15rem;
+            line-height: 1.5;
+            color: #ffffff;
+        }
+
+        .research-title span {
+            color: #9fb1da;
+            font-weight: normal;
+        }
+
+        .research-list {
+            margin: 0.8rem 0 0;
+            padding-left: 1.2rem;
+        }
+
+        .research-list li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+            color: #d9e2f5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <main class="main-content">
+        <h1 class="page-title">Research</h1>
+        <p class="page-subtitle">Selected work in machine learning, security, and graph theory.</p>
+
+        <section class="research-card">
+            <h2 class="research-title">
+                GPT-2: Transformer-based Text Generation and Spam Classification
+                <span>| Python, PyTorch, HuggingFace Transformers</span>
+            </h2>
+            <ul class="research-list">
+                <li>Implemented the GPT-2 architecture from first principles, including masked multi-head self-attention and autoregressive language modeling.</li>
+                <li>Pretrained on a 50MB book corpus to learn contextual language representations for coherent long-form text generation.</li>
+                <li>Leveraged pretrained GPT-2 weights to improve convergence stability and semantic generalization.</li>
+                <li>Converted the generative model into a discriminative framework via a task-specific classification head; fine-tuned on SMS Spam dataset achieving 97%+ accuracy.</li>
+                <li>Performed controlled experiments comparing training-from-scratch vs. transfer learning to evaluate efficiency and generalization performance.</li>
+            </ul>
+        </section>
+
+        <section class="research-card">
+            <h2 class="research-title">
+                Extension of Explainable AMR Prediction Pipeline in Pseudomonas aeruginosa
+                <span>| Python, Scikit-learn, SHAP</span>
+            </h2>
+            <ul class="research-list">
+                <li>Reproduced and extended a published two-tier machine learning pipeline for antimicrobial resistance (AMR) prediction from whole-genome sequences.</li>
+                <li>Implemented k-mer feature extraction with &chi;<sup>2</sup>-based feature selection and stratified train-test validation.</li>
+                <li>Enhanced Tier-I (Resistant vs Susceptible) prediction using ensemble methods (Random Forest, Gradient Boosting), improving robustness over baseline Decision Tree (79% accuracy, AUC 0.77).</li>
+                <li>Conducted comparative performance analysis across models using Accuracy, MCC, Sensitivity, Specificity, and AUC-ROC.</li>
+                <li>Applied SHAP-based interpretability to identify resistance-associated genomic signatures.</li>
+            </ul>
+        </section>
+
+        <section class="research-card">
+            <h2 class="research-title">
+                Algorithmic and Structural Study of Equitable Fair Domination in Graphs
+                <span>| Graph Theory, Algorithms | Ongoing</span>
+            </h2>
+            <ul class="research-list">
+                <li>Designing efficient algorithms to compute equitable fair dominating sets and the equitable fair domination number &gamma;<sub>efd</sub>(G).</li>
+                <li>Establishing theoretical results for special graph classes, including trees, cycles, and complete bipartite graphs.</li>
+                <li>Exploring connections with classical domination, equitable domination, and fair domination frameworks.</li>
+                <li>Preparing results for academic publication in theoretical computer science and discrete mathematics.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="navbar.js"></script>
+</body>
+</html>
